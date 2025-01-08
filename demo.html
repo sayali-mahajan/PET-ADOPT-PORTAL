@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video/Image Slider</title>
+</head>
+<style>
+    .slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide video {
+    width: 100%;
+    height: auto;
+}
+
+</style>
+<body>
+    <div class="slider">
+        <div class="slide">
+            <video controls>
+                <source src="vecteezy_gray-rabbit-eating-carrots-outdoors_35502377.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="slide">
+            <img src="persionrabbit.jpeg.jpg" alt="Image 1">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <script> 
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    let slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+
+    // Automatically advance slides every 5 seconds
+    setInterval(function() {
+        showSlide(currentSlide + 1);
+    }, 5000);
+
+    showSlide(currentSlide); // Show initial slide
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Adoption Checklist</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f6f6f6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .purple-text {
+        color: #6504b5;
+    }
+
+    .get-started {
+        background-color: #6504b5;
+        color: #fff;
+        border: none;
+        border-radius: 20px; /* Adjust border radius */
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 20px;
+    }
+
+    .get-started:hover {
+        background-color: #48037a;
+    }
+
+    .search-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .search-container input[type="text"],
+    .search-container input[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container input[type="submit"] {
+        background-color: #6504b5;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .search-container input[type="submit"]:hover {
+        background-color: #48037a;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="purple-text">Find your best match</h2>
+    <p>It only takes 60 seconds.</p>
+    <a href="getstarted.html"><button class="get-started">GET STARTED</button> </a><!-- Changed to button element -->
+    <h2 class="purple-text">Find Pet-Adoption Groups</h2>
+    
+    <div class="search-container">
+        <form action="#">
+            <input type="text" placeholder="Location">
+            <input type="text" placeholder="Group Name">
+            <input type="submit" value="SEARCH">
+        </form>
+    </div>
+
+    
+</div>
+
+</body>
+</html>
