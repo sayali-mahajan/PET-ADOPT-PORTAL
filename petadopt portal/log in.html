@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f6f6f6;
+        margin: 0;
+        padding: 0;
+        height: 80vh;
+    }
+    .main{
+    position: relative;
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .vid-container{
+    position: absolute;
+    top : 0;
+    left:0;
+    width:100%;
+    height:80%;
+    overflow: hidden;
+
+  }
+
+    .login-container {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+        position:absolute;
+      top:50%;
+      left:50%;
+      width:400px;
+      padding:40px;
+      transform:translate(-50%, -40%);
+    }
+
+    .login-container h2 {
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .login-container input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        background-color: rgba(101, 4, 181, 0.5);
+        color: #fff;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .login-container input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .forgot-password {
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .login-options {
+        margin-top: 20px;
+    }
+
+    .login-options a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .signup {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    /* Added styles for Facebook and Google buttons */
+    .login-options a.facebook-btn, .login-options a.google-btn {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 35%;
+        width: 60px;
+        height: 40px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .login-options a.facebook-btn {
+        background-color: #3b5998;
+        color: #fff;
+    }
+
+    .login-options a.google-btn {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #000;
+    }
+
+    .login-options i {
+        margin-right: 5px;
+    }
+    .space{
+    height:30px;
+}
+.top-bar{
+    background-color: rgba(239,238,241,255);
+    height:70px;
+    display:flex;
+
+   
+}
+.nav-bar{
+    background:#6504b5;
+    height:20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 2rem 1rem 0;
+    
+}
+.menu-bar{
+    position:absolute;
+    top:10%;
+    width:100%;
+    height: 90px;
+    margin-bottom: 2rem;
+    transform:translate(-50%, -50%);
+ 
+    
+   
+
+}
+.first{
+    background: white;
+    width: 1100px;
+    margin-right:5px ;
+    padding:1rem 0rem 0.4rem 6rem;
+    display: flex;
+}
+.second{
+    background:white;
+    flex:1;
+    padding: 1.5rem 2rem 2rem 2rem;
+    flex-wrap: wrap;
+
+}
+.img{
+    height:40px;
+    width: 40px;
+    
+}
+span{
+    color: #6504b5;
+    font-family: cursive;
+    font-weight:900;
+    text-align: center;
+
+}
+.second a{
+    text-decoration: none;
+    color:grey;
+    font-weight: 600;
+}
+.two{
+    margin-left:1.5rem;
+}
+.nav-bar a{
+    text-decoration: none;
+    color :white;
+    font-weight: 400;
+    list-style: none;
+    
+    
+}
+.nav-bar a:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <div class="Main"> 
+  
+        <div class="space" style="background-color: #EFEEF1;"></div>
+        <div class="top-bar">
+          <div class="first">
+           <img src="p.png"class="img">
+           <span>PetAdoptportal</span>
+          </div>
+      
+          <div class="second">
+            <a href="signin.html"class="one">Sign Up</a>
+            <a href="log in.html" class="two">Log In</a>
+          </div>
+          </div> 
+        
+        <div class="vid-continer">
+          <video src="bgdog.mp4" autoplay muted loop id="video" style="width:100%"></video>
+        </div>
+      </div>
+
+<div class="login-container">
+    <h2>Log In</h2>
+    <form action="login.php" method="POST">
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="LOG IN">
+    </form>
+    <div class="forgot-password">
+        <a href="forget.html">Forgot password?</a>
+    </div>
+    <div class="or-login-with">or log in with</div>
+    <div class="login-options">
+        <a href="#" class="facebook-btn"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="google-btn"><i class="fab fa-google"></i></a>
+    </div>
+    <div class="signup">
+        <span>Need an account? </span><a href="signin.html">Sign up</a>
+    </div>
+</div>
+
+</body>
+</html>

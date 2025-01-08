@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.Rimage {
+ /* justify-content: center; */
+    width: 70vw;
+    height: 80%;
+    object-fit: cover;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+
+
+    
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    color: #333;
+}
+
+.dog-info {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #666;
+}
+
+p {
+    color: #888;
+}
+.details-container {
+    max-width: 100%;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.options-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #6504b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #6504b5;
+}
+.dog-image{
+    width: 30%;
+    height: 50vh;
+}
+
+  
+  
