@@ -1,5 +1,3 @@
-# PET-ADOPT-PORTAL
-
 # 🐾 **Pet Adopt Portal**  
 *Find your forever friend! 🐶🐱*
 
